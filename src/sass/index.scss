@@ -1,0 +1,101 @@
+/*Classe font jersey 10*/
+.jersey-10-regular {
+  font-family: "Jersey 10", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Classe font Share Tech Mono*/
+
+.share-tech-mono-regular {
+  font-family: "Share Tech Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Dichiarazione variabili*/
+$bg-color: #153243;
+$bg-secondary-color: #284b63;
+$title-color: #f4f9e9;
+$text-color: #b4b8ab;
+$title-font: "Jersey 10";
+$text-font: "Share Tech Mono";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  .title {
+    display: block;
+    font-size: 3.5em;
+    font-family: $title-font;
+    color: $title-color;
+    letter-spacing: 3px;
+  }
+
+  .btn {
+    background-color: $title-color;
+    color: $bg-color;
+
+    font-size: 1.5em;
+    font-family: $title-font;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+}
+.stories-container {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.story-container {
+  background-color: $bg-secondary-color;
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 20px;
+  .details-container {
+    display: flex;
+    gap: 10px;
+  }
+  a {
+    display: block;
+    font-size: 1.2em;
+    font-family: $text-font;
+    color: $title-color;
+    text-decoration: none;
+    padding-top: 10px;
+    width: 80%;
+  }
+  p {
+    font-size: 0.8em;
+    font-family: $text-font;
+    color: $text-color;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+  }
+}
