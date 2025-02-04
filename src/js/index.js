@@ -15,7 +15,7 @@ const gContainer = document.querySelector("#g-container");
 const sContainer = document.querySelector("#stories-container");
 const loadMoreBtn = document.querySelector("#load-more");
 
-window.addEventListener("load", (event) => {
+window.addEventListener("load", () => {
   loadMoreBtn.hidden = "";
 });
 
